@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let vize1 = Number(prompt("Vize 1 notunuzu giriniz: "))
+        let vize2 = Number(prompt("Vize 2 notunuzu giriniz: "))
+        let final1 = Number(prompt("Final notunuzu giriniz: "))
+        let gno = ((vize1 * 30) / 100) + ((vize2 * 30) / 100) + ((final1 * 40) / 100)
+        if (gno > 50) {
+            document.write("Geçtiniz") // alert ilede ekrana verebilirdik
+        }
+        else {
+            document.write("Kaldınız")
+        }
+    </script>
+</body>
+
+</html>
