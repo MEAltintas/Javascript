@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let kilo = Number(prompt("Kilonuzu giriniz: "))
+        let boy = Number(prompt("Boyunuzu metre cinsinden giriniz: "))
+        let indeks = (kilo) / ((boy) ** 2)
+        if (indeks < 18.5) {
+            document.write("İdeal kilonun altındasınız.")
+        }
+        else if (indeks >= 18.5 && indeks <= 24.9) {
+            document.write("İdeal kilodasınız.")
+        }
+        else if (indeks >= 25 && indeks <= 29.9) {
+            document.write("İdeal kilonun üstündesiniz.")
+        }
+        else if (indeks >= 30 && indeks <= 39.9) {
+            document.write("Obezsiniz.")
+        }
+        else if (indeks >= 40) {
+            document.write("Morbid Obezsiniz.")
+        }
+    </script>
+</body>
+
+</html>
