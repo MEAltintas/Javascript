@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sayi = prompt("Bir sayı giriniz: ")
+        let toplam = 0;
+        for (let i = 0; i < sayi.length; i++) {
+            let rakam = sayi.charAt(i);
+            toplam += rakam * rakam * rakam;
+
+        }
+        if (Number(sayi) == toplam) {
+            document.write("Armstrong sayıdır.")
+        } else {
+            document.write("Armstrong sayı değildir.")
+        }
+    </script>
+</body>
+
+</html>
