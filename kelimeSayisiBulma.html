@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let metin = prompt("Lütfen cümlenizi yazınız: ");
+        let harf = prompt("Aramak istediğiniz harfi giriniz: ");
+        function bul(harf) {
+            let toplam = 0;
+            for (let i = 0; i < metin.length; i++) {
+                if (metin.charAt(i) == harf) {
+                    toplam++;
+
+                }
+            }
+            return toplam;
+        }
+        let sonuc = bul(harf);
+        document.write("Harf sayısı: " + sonuc)
+    </script>
+</body>
+
+</html>
