@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function kup(sayi) {
+            let sonuc = sayi * sayi * sayi;
+            return sonuc;
+        }
+        let donenDeger = kup(3);  // Return döndürdüğü değer metodun çağırıldığı yere bırakmasıdır 
+        let yeniDeger = kup(5);   // yani sonuc olarak dönen şey metodun çağırıldığı yere gider o da başka bir nesneye atanıp yazdırılır
+        document.write(donenDeger + "<br>");
+        document.write(yeniDeger);
+    </script>
+</body>
+
+</html>
