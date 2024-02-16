@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const hesapla = (a, b) => {
+            const topla = a + b;
+            const cikar = a - b;
+            const carp = a * b;
+            const bol = a / b;
+
+            const dizi = [topla, cikar, carp, bol];
+            return dizi;
+        }
+        let [a, b, c, d] = hesapla(10, 2);
+        document.write(a, b, c, d);
+
+    </script>
+</body>
+
+</html>
