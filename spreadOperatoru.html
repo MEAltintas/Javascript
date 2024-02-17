@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sayilar = [10, 20, 30, 40]
+        function add(a, b, c, d) {
+            document.write(a + b + c + d);
+        }
+        //Eski yöntem
+        add(sayilar[0], sayilar[1], sayilar[2], sayilar[3]);
+        //Yeni yöntem
+        add(...sayilar)  // add(...sayilar)= add(sayilar[0],sayilar[1],sayilar[2],sayilar[3]); bu anlama gelir dilimlemeye yarar
+    </script>
+</body>
+
+</html>
