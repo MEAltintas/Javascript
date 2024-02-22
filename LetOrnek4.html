@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sayilar = [2, 4, 3, 5, 12, 13];
+        let tekSayiKontrol = (sayi) => sayi % 2 == 1;
+        let tekSayilar = sayilar.filter(tekSayiKontrol);
+        for (let i in tekSayilar) {
+            document.write(tekSayilar[i] + "</br>");
+        }
+    </script>
+</body>
+
+</html>
