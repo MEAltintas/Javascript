@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function gizleGoster(ID) {
+            let sec = document.getElementById(ID);
+            if (sec.style.display == "none") {
+                sec.style.display = "";
+            }
+            else {
+                sec.style.display = "none";
+            }
+        }
+    </script>
+    <button onclick="gizleGoster('p1');">Tıklayınız</button>
+    <p id="p1">Merhaba Yazılım</p>
+</body>
+
+</html>
