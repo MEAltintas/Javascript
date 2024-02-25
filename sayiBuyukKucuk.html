@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anasayfa</title>
+</head>
+
+<body>
+
+    <label>Sayı1: </label>
+    <input type="number" id="sayi1">
+    <label>Sayı2: </label>
+    <input type="number" id="sayi2">
+    <button id="hesapla">Bul</button>
+    <div id="sonuc"></div>
+
+    <script>
+        function hesapla() {
+            var sayi1 = document.getElementById("sayi1").value;
+            var sayi2 = document.getElementById("sayi2").value;
+            var sayi1 = Number(sayi1);
+            var sayi2 = Number(sayi2);
+            if (sayi1 > sayi2) {
+                document.getElementById("sonuc").innerHTML = "Sayı1>Sayı2";
+            }
+            else if (sayi2 > sayi1) {
+                document.getElementById("sonuc").innerHTML = "Sayı2>Sayı1";
+            }
+            else {
+                document.getElementById("sonuc").innerHTML = "Eşitler";
+            }
+
+        }
+        var hesapbtn = document.getElementById("hesapla");
+        hesapbtn.onclick = hesapla;
+    </script>
+</body>
+
+</html>
