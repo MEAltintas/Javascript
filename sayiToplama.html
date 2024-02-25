@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anasayfa</title>
+</head>
+
+<body>
+
+    <label>Sayı: </label>
+    <input type="number" id="sayi">
+    <button id="buton">Topla</button>
+    <div id="sonuc"></div>
+
+
+    <script>
+        function topla() {
+            var toplam = 0;
+            var sayi = document.getElementById("sayi").value;
+            var sayi = Number(sayi);
+            for (var i = 0; i <= sayi; i++) {
+                toplam += i;
+                document.getElementById("sonuc").innerHTML = "Sonuç: " + toplam;
+            }
+        }
+        var toplabuton = document.getElementById("buton");
+        toplabuton.onclick = topla;
+    </script>
+</body>
+
+</html>
