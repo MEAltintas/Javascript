@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+</head>
+
+<body>
+    <label>Sayı1: </label>
+    <input type="number" id="sayi1">
+    <label>Sayı2: </label>
+    <input type="number" id="sayi2">
+    <button id="yazdir">Yazdır</button>
+    <div id="sonuc"></div>
+
+    <script>
+        function hesapla() {
+            var sayi1 = document.getElementById("sayi1").value;
+            var sayi2 = document.getElementById("sayi2").value;
+            var sayi1 = Number(sayi1);
+            var sayi2 = Number(sayi2);
+            for (var i = sayi1; i <= sayi2; i++) {
+                document.getElementById("sonuc").innerHTML += "  " + i;
+            }
+        }
+        var hesaplabtn = document.getElementById("yazdir");
+        hesaplabtn.onclick = hesapla;
+    </script>
+</body>
+
+</html>
