@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anasayfa</title>
+</head>
+
+<body>
+    <label>Cümle: </label>
+    <input type="text" id="cumle">
+    <button id="cevir">Çevir</button>
+    <div id="sonuc"></div>
+
+
+    <script>
+        const cevir = () => {
+            var cumle = document.getElementById("cumle").value;
+            var cumle = document.getElementById("sonuc").innerHTML = "Sonuç: " + cumle.toUpperCase();
+
+        }
+        var btn = document.getElementById("cevir");
+        btn.onclick = cevir;
+    </script>
+</body>
+
+</html>
