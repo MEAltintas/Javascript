@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Fiyat: </label>
+    <input type="number" id="fiyat">
+    <lable>KDV: </lable>
+    <input type="number" id="kdv">
+    <button id="hesap">Hesapla</button>
+    <div id="sonuc"></div>
+
+    <script>
+        function hesapla() {
+            var fiyat = document.getElementById("fiyat").value;
+            var kdv = document.getElementById("kdv").value;
+            var fiyat = Number(fiyat);
+            var kdv = Number(kdv);
+            var toplamTutar = fiyat + (fiyat * (kdv / 100));
+            document.getElementById("sonuc").innerHTML = "KDV'li Fiyat: " + toplamTutar;
+        }
+        var hesplabtn = document.getElementById("hesap");
+        hesplabtn.onclick = hesapla;
+    </script>
+</body>
+
+</html>
